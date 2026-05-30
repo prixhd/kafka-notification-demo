@@ -29,7 +29,6 @@ public class OrderConsumer {
             String productName   = (String) orderEvent.get("productName");
             String status        = (String) orderEvent.get("status");
 
-            // базовая проверка перед обработкой
             if (orderId == null || customerEmail == null) {
                 log.warn("Received incomplete order event, skipping: {}", orderEvent);
                 return;

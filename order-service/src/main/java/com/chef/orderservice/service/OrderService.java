@@ -18,7 +18,6 @@ public class OrderService {
     private final OrderProducer orderProducer;
 
     public OrderEvent createOrder(OrderRequest request) {
-        // строим событие из запроса
         OrderEvent event = OrderEvent.builder()
                 .orderId(UUID.randomUUID().toString())
                 .customerName(request.getCustomerName())

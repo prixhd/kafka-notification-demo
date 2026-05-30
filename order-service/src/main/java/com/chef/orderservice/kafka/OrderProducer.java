@@ -15,7 +15,6 @@ import java.util.concurrent.CompletableFuture;
 @RequiredArgsConstructor
 public class OrderProducer {
 
-    // название топика берём из application.yml
     @Value("${app.kafka.topic.order-events}")
     private String topic;
 
