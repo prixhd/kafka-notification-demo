@@ -1,6 +1,6 @@
 # Kafka Notification System
 
-Учебный микросервисный проект на Java и Spring Boot.
+Микросервисный пет-проект на Java и Spring Boot.
 
 ## Описание
 
